@@ -123,8 +123,7 @@ public abstract class MixinMinecraftClient implements IMixinMinecraftClient {
 	 */
 	@Overwrite
 	public void updateWindowTitle() {
-		this.window.setTitle(Soar.getInstance().getName() + " Client v" + Soar.getInstance().getVersion() + " for "
-				+ getWindowTitle());
+		this.window.setTitle(Soar.getInstance().getName() + " Client " + Soar.getInstance().getVersion());
 	}
 
 	@Inject(method = "<init>", at = @At("TAIL"))
