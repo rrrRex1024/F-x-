@@ -10,6 +10,7 @@ import com.soarclient.management.mod.api.hud.design.impl.ClassicDesign;
 import com.soarclient.management.mod.api.hud.design.impl.ClearDesign;
 import com.soarclient.management.mod.api.hud.design.impl.MaterialYouDesign;
 import com.soarclient.management.mod.api.hud.design.impl.SimpleDesign;
+import com.soarclient.management.mod.impl.combat.KillAuraMod;
 import com.soarclient.management.mod.impl.hud.*;
 import com.soarclient.management.mod.impl.misc.*;
 import com.soarclient.management.mod.impl.player.*;
@@ -89,6 +90,9 @@ public class ModManager {
 		mods.add(new ZoomMod());
         mods.add(new AutoTextMod());
 
+		// Combat
+		mods.add(new KillAuraMod());
+
         // Render
 		mods.add(new CustomHandMod());
         //mods.add(new GlowMod());
@@ -96,7 +100,7 @@ public class ModManager {
 		mods.add(new MusicWaveformMod());
 		mods.add(new OverlayEditorMod());
 		mods.add(new ProjectileTrailMod());
-        mods.add(new ActionCameraMod());
+//        mods.add(new ActionCameraMod());
         mods.add(new HitEffectMod());
         mods.add(new BlockOverlayMod());
 

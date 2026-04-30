@@ -22,7 +22,7 @@ public class Soar {
 
     private final static Soar instance = new Soar();
 
-    private final String name = "f(X)";
+    private final String name = "f(x)";
     private final String version = "beta";
 
     private long launchTime;
